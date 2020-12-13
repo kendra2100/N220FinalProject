@@ -1,0 +1,59 @@
+body {
+  background: black;
+  overflow: hidden;
+}
+
+.paddle {
+  width: 15px;
+  height: 160px;
+  background: white;
+  position: absolute;
+}
+
+#dash {
+  width: calc(50% - 16px);
+  height: 100%;
+  border-right: 8px dashed white;
+  position: absolute;
+}
+
+.score {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font: monospace;
+  font-size: 80px;
+}
+
+#right-score {
+  left: 75%;
+}
+
+#right-paddle {
+  left: calc(100vw - 25px);
+  position: absolute;
+}
+
+#ball {
+  background: white;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+#explanation {
+  margin: 0 auto;
+  z-index: 9999;
+  position: absolute;
+  background: #efefef;
+  padding: 50px;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 6px;
+  font-family: sans-serif;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
